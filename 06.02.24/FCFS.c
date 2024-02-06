@@ -36,7 +36,8 @@ void calc_tat(int n)
 
 void print_table(int n)
 {	
-	int avg_wt,avg_tat,i;
+	float avg_wt,avg_tat;
+ int i;
 	int temp_wt=0;
 	int temp_tat=0;
 	calc_cp(n);
@@ -59,7 +60,7 @@ void print_table(int n)
 		printf("P%d\t%d\t%d\t%d\t%d\n",i+1,bt[i],cp[i],wt[i],tat[i]);
 	}
 	printf("\n\n");
-	printf("Avg WT = %d\nAvg TAT = %d\n",avg_wt,avg_tat);
+	printf("Avg WT = %f\nAvg TAT = %f\n",avg_wt,avg_tat);
 }
 
 int main()
